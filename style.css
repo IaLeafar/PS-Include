@@ -1,0 +1,378 @@
+/*Temas*/
+:root{
+    --btn-expandir: #fff;
+    --color-background:#8B0000;                          
+    --text-color: #FFFFFF;                            
+    --title-color: #A2002D;                             
+    --redes-color: #000000;                         
+    --title-2-color: #FFFFFF;
+    --color-2-background: #000000;
+    --text-2-color: #A2002D;
+    --line-color: #2f2f2f;
+    --linkhover: #2f2f2f;                          
+    }
+.light{
+    --btn-expandir: #000;
+    --color-background: #f6660d;                            
+    --text-color: #000000;                            
+    --title-color: #000000;                                     
+    --redes-color: #FFFFFF;                        
+    --title-2-color: #000000;                 
+    --color-2-background: #f47d42;
+    --text-2-color: #000000;
+    --line-color: #c0c0c0;
+    --linkhover: #c0c0c0;                    
+    }
+
+/*Body*/
+ 
+*{
+    margin: 0;                 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', Times, serif;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-background); 
+
+}
+
+/*Header - Nav*/
+
+nav.menu-lateral {
+   width: 50px;
+   height: 100%;
+   background-color: var(--color-2-background);
+   padding: 30px 0 40px 0;
+   position: fixed;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+   transition: 0.5s;
+}
+
+nav.menu-lateral.expandir {
+    width: 200px;
+}
+
+.btn-expandir {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i {
+    color: var(--btn-expandir);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu {
+    transition: 1s;
+}
+
+ul li.active {
+    background-color: var(--line-color);
+}
+
+ul li.item-menu:hover{
+    background-color: var(--linkhover);
+    transition: 0.5s;
+}
+
+ul li.item-menu a{
+    color: var(--text-2-color);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 20px 2%;
+    display: flex;
+    margin-bottom: 15px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link {
+margin-left: 60px;
+transition: 1s;
+opacity: 0;
+}
+
+
+ul li.item-menu a .icon{
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+nav.menu-lateral.expandir .txt-link {
+    margin-left: 40px;
+    opacity: 1;
+}
+
+/*Botão do Tema (Sem Brilho)*/
+
+ul li#item-menu a{
+    color: var(--text-2-color);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 15px;
+    line-height: 40px;
+}
+
+ul li #txt-link {
+margin-left: 60px;
+transition: 1s;
+opacity: 0;
+}
+
+ul li#item-menu a #icon{
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+nav.menu-lateral.expandir #txt-link {
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li#item-menu:hover{
+    background-color: var(--linkhover);
+    transition: 0.5s;
+}
+
+/*Contéudo Principal*/
+
+
+.titulo{
+    color: var(--text-2-color);
+    font-family: "Uncial Antiqua", system-ui;
+    background-color: var(--color-2-background);
+    border-bottom: var(--line-color) solid 4px;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    font-size: 28px;
+}
+
+.principal{
+    background-color: var(--color-background);
+    padding: 40px 20px 60px 20px;
+    border-bottom: var(--line-color) solid 8px;
+}
+div h2.tpost {
+    color: var(--title-2-color);
+    font-family: "Gugi", serif;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+div h3.titulo3 {
+    color: var(--title-2-color);
+    font-family: 'Inter', Times, serif;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+div h3.titulo4 {
+    color: var(--title-2-color);
+    font-family: 'Inter', Times, serif;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+div ul.listapa-pe {
+    color: var(--text-color);
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+div ul.Inter {
+    color: var(--text-color);
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+div ul.listasimples {
+    color: var(--text-color);
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+div span.Destaque {
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Imagens Pag0*/
+img.mor {
+    margin:  0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Imagens Pag1*/
+img.eu {
+    margin:  0px auto;
+    display: flex;
+    width: 180px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Imagens Pag2*/
+img.inclu {
+    margin:  0px auto;
+    display: flex;
+    width: 162px;
+    height: 135px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Imagens Pag3*/
+img.pump {
+    margin:  0px auto;
+    display: flex;
+    width: 162px;
+    height: 135px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*Imagens Pag4*/
+img.bruxa {
+    margin:  0px auto;
+    display: flex;
+    width: 162px;
+    height: 135px;
+    justify-content: center;
+    align-items: center;
+}
+
+div p.cont {
+    color: var(--text-color);
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/*Posts pag4*/
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+  
+input, textarea, button {
+    width: 80%;
+    font-size: 16px;
+    margin: 0px auto;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+}
+
+button#add-post-btn {
+    justify-content: center;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+  
+.posts {
+    margin-top: 20px;
+}
+  
+.post {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+  
+.post h3 {
+    margin: 0 0 10px 0;
+}
+  
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 12px;
+    cursor: pointer;
+    justify-content: center;
+}
+  
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+
+/*Footer e Redes Sociais*/
+
+footer .rodape {
+ padding: 40px 10vh 0px 10vh;
+
+}
+
+footer p.contato {
+    color: var(--text-color);
+    margin-bottom: 0px;
+    padding: 20px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+footer div.social-links {
+ text-align: center;
+}
+
+footer a {
+    margin-top: 0px;
+    margin-right: 5px;
+    padding: 10px;
+    padding-top: 24px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--redes-color);
+}
