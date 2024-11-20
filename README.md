@@ -21,6 +21,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Criar meu próprio site/blog, do tema Oppenheimer e Barbie, que fale sobre mim e sobre a Include Engenharia para o Processo Seletivo Trainee.
+Criar meu próprio site/blog, do tema Halloween, que fale sobre mim e sobre a Include Engenharia para o Processo Seletivo.
 
 Feito para a Include...
